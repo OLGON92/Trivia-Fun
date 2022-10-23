@@ -1,0 +1,80 @@
+@font-face {
+  font-family:'Public Sans', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(139, 196, 250);
+  min-height: 100vh;
+
+}
+
+.all {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.quiz-contain {
+  margin-left: 220px;
+  background-color: white;
+  width: 650px;
+  height: 650px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 4px 6px grey, 0 4px 6px grey;
+}
+
+.first-part {
+  padding-bottom: 8px;
+  border-bottom: 2px ridge grey;
+}
+
+.title {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 25px;
+  height: 100px;
+}
+
+h1 {
+  padding: 20px;
+  font-size: 55px;
+}
+
+.level-category {
+  font-size: 1.3rem;
+  height: 2.5rem;
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.options {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: 1px solid grey;
+  width: 250px;
+  background-color: rgb(185, 218, 255);
+  box-shadow: 0 .5px 2px grey, 0 .5px 2px grey;
+}
+
+.questionNumber {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border: 5px solid lightgrey;
+  margin-top: 205px;
+  margin-left: 175px;
+  margin-right: 175px;
+}
