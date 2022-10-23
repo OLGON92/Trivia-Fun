@@ -25,9 +25,8 @@ body {
   margin-left: 220px;
   background-color: white;
   width: 650px;
-  height: 650px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  height: 700px;
+  border-radius: 5px;;
   box-shadow: 0 4px 6px grey, 0 4px 6px grey;
 }
 
@@ -69,12 +68,36 @@ h1 {
   box-shadow: 0 .5px 2px grey, 0 .5px 2px grey;
 }
 
+.pick-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.choice-option {
+  text-align: center;
+  width: 250px;
+  border-radius: 2px;
+  font-weight: 500;
+  background-color: pink;
+  margin: 5px;
+  padding: 25px;
+  cursor: pointer;
+  border: 2px ridge grey;
+}
+
+.them-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 200px;
+}
+
 .questionNumber {
   text-align: center;
   font-weight: 700;
   font-size: 1.5rem;
   border: 5px solid lightgrey;
-  margin-top: 205px;
+  margin-top: 20px;
   margin-left: 175px;
   margin-right: 175px;
 }
