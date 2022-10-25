@@ -3,7 +3,7 @@ export default class Host {
         this.data = data;
     }
 
-func () 
+funky() 
 {
 	let returnarray = [0, 1, 2, 3, 4, 5];
   
