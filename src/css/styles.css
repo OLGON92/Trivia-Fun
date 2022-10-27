@@ -10,9 +10,10 @@
 }
 
 body {
+  background-image: url(../assets/images/cringe.png);
+  display: center;
   background-color: rgb(139, 196, 250);
   min-height: 100vh;
-
 }
 
 .all {
@@ -27,7 +28,7 @@ body {
   width: 650px;
   height: 700px;
   border-radius: 5px;;
-  box-shadow: 0 4.5px 12px grey, 0 4.5px 12px grey;
+  box-shadow: 0 4.5px 12px rgb(24, 22, 22), 0 4.5px 12px rgb(24, 22, 22);
 }
 
 .first-part {
@@ -76,12 +77,12 @@ h1 {
 }
 
 .options {
-  color: rgb(0, 0, 0);
+  color: white;
   text-align: center;
-  border: 1px solid grey;
+  border: 1px solid black;
   width: 250px;
-  background-color: rgb(185, 218, 255);
-  box-shadow: 0 .5px 2px grey, 0 .5px 2px grey;
+  background-color: rgb(184, 21, 48);
+  box-shadow: 0 .5px 2px rgb(24, 22, 22), 0 .5px 2px rgb(24, 22, 22);
 }
 
 .main-option-box {
@@ -101,18 +102,18 @@ h1 {
   width: 250px;
   border-radius: 2px;
   font-weight: 500;
-  background-color: pink;
+  background-color: rgb(184, 21, 48);
   margin: 5px;
   padding: 25px;
   cursor: pointer;
-  box-shadow: 0 .5px 2px grey, 0 .5px 2px grey;
+  box-shadow: 0 .5px 2px rgb(24, 22, 22), 0 .5px 2px rgb(24, 22, 22);
 }
 
 .choice-option:hover {
-  background-color: rgb(197, 206, 219);
+  background-color: rgb(228, 240, 175);
   color: black;
   border-color: gray;
-  box-shadow: 0 .5px 5px rgb(129, 102, 102), 0 .5px 5px grey;
+  box-shadow: 0 .5px 5px rgb(24, 22, 22), 0 .5px 5px rgb(24, 22, 22);
 }
 
 .choice-option:active {
@@ -150,7 +151,8 @@ margin-left: 20px;
   box-shadow: 0 1px 0 1px rgb(235, 227, 227);
 }
 
-#answer:hover {
+#answer:hover,
+#start-over:hover {
   background-color: rgb(136, 123, 133);
   color: whitesmoke;
 }
