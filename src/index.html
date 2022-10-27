@@ -4,64 +4,53 @@
   <title> Trivia Game </title>
 </head>
 <body class="all">
-
-  <div class="grid">
-    <div class="grid-item1"></div>
-    <div class="grid-item2"></div>
-    <div class="grid-item3"></div>
-    <div class="grid-item4"></div>
-    <div class="grid-item5"></div>
-    <div class="grid-item6"></div>
-    <div class="grid-item7"></div>
-    <div class="grid-item8"></div>
-  </div>
-
-  <div class="container">
-    <div class="quiz-contain">
-      <div class="first-part">
-        <div class="title">
-          <h1> Trivia Game </h1>
+  <body class="all">
+    <div class="container">
+      <div class="quiz-contain">
+        <div class="first-part">
+          <div class="title">
+            <h1> Trivia Game </h1>
+          </div>
+          <div class="level-category">
+            <span class="options" id="category">Option - </span>
+            <br>
+            <span class="options" id="difficulty">Level - </span>
+          </div>
         </div>
-        <div class="level-category">
-          <span class="options" id="category">Option - </span>
-          <br>
-          <span class="options" id="difficulty">Level - </span>
-        </div>
-      </div>
-      <div class="quiz">
-        <div class="quiz-header">
-          <p id="question">What is going on? how are things ujbsdhjbfsdhjbhjsdfvbhjdsvhjfdsvhjdsfvhjdsvhjdsvhjsdvhjsdavhjfdvhjsdvhjfdvhjsvdhjsdfvefwjbsdfjkbjsdfbjdsbjkdsfbjdsbkjsdbdsfjkbdfsjkbdfsjkbdfsjkbdfsjkbdfsjkbfdjkdsfbj</p>
-        </div>
-        <div class="main-option-box">
-          <div class="pick-options">
-            <div class="btn-choice">
-              <input type="radio" id="answer1" name="answer-choice" value="answer1">
-              <label class="choice-option" for="answer1">answer1</label>
+        <div class="quiz">
+          <div class="quiz-header">
+            <p id="question">What is going on? how are things ujbsdhjbfsdhjbhjsdfvbhjdsvhjfdsvhjdsfvhjdsvhjdsvhjsdvhjsdavhjfdvhjsdvhjfdvhjsvdhjsdfvefwjbsdfjkbjsdfbjdsbjkdsfbjdsbkjsdbdsfjkbdfsjkbdfsjkbdfsjkbdfsjkbdfsjkbfdjkdsfbj</p>
+          </div>
+          <div class="main-option-box">
+            <div class="pick-options">
+              <div class="btn-choice">
+                <input type="radio" id="answer1" name="answer-choice" value="answer1">
+                <label class="choice-option" for="answer1">answer1</label>
+              </div>
+              <div class="btn-choice">
+                <input type="radio" id="answer2" name="answer-choice" value="answer2">
+                <label class="choice-option" for="answer2">answer2</label>
+              </div>
+              <div class="btn-choice">
+                <input type="radio" id="answer3" name="answer-choice" value="answer3">
+                <label class="choice-option"  for="answer3">answer3</label>
+              </div>
+              <div class="btn-choice">
+                <input type="radio" id="answer4" name="answer-choice" value="answer4">
+                <label class="choice-option" for="answer4">answer4</label>
+              </div>
             </div>
-            <div class="btn-choice">
-              <input type="radio" id="answer2" name="answer-choice" value="answer2">
-              <label class="choice-option" for="answer2">answer2</label>
+          </div>
+          <div class="bottom">
+            <div class="them-buttons">
+              <button type="button" id="answer">Answer</button>
+              <button type="button" id="start-over">Try again</button>
             </div>
-            <div class="btn-choice">
-              <input type="radio" id="answer3" name="answer-choice" value="answer3">
-              <label class="choice-option"  for="answer3">answer3</label>
-            </div>
-            <div class="btn-choice">
-              <input type="radio" id="answer4" name="answer-choice" value="answer4">
-              <label class="choice-option" for="answer4">answer4</label>
+            <div class="on-question">
+              <span class="number-of-questions">0</span>/<span class="total-of-question">10</span>
             </div>
           </div>
         </div>
-        <div class="bottom">
-          <div class="them-buttons">
-            <button type="button" id="answer">Answer</button>
-            <button type="button" id="start-over">Try again</button>
-          </div>
-          <div class="on-question">
-            <span class="number-of-questions">0</span>/<span class="total-of-question">10</span>
-          </div>
-        </div>
-      </div>
-    </div> 
-  </div>
-</body>
+      </div> 
+    </div>
+  </body>
