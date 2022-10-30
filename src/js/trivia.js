@@ -7,7 +7,7 @@ funky()
 {
 	let returnarray = [0, 1, 2, 3, 4, 5];
   console.log(this.data)
-  returnarray[0] = this.data.results[0].question;
+  returnarray[0] = this.data.value.results[0].question;
   let arraynums = [1, 2, 3, 4]
   
     let i = 4;
