@@ -1,4 +1,4 @@
-export default class Host {
+export default class Teach {
     constructor(user, right) { 
         this.user = user;
         this.right = right;
