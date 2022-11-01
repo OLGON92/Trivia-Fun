@@ -1,46 +1,39 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Host from './js/trivia.js'
-import Call from './js/call.js'
-
-
+//import Host from './js/trivia.js';
+import Call from './js/call.js';
 
 //Business Logic
-async function triviaStuff(category, difficulty, type) {
-  const response = await Call.callStuff(category, difficulty, type);
+let questions = document.getElementById('question')
+let choices = document.getElementsById('answer');
+
+async function triviaStuff() {
+  const response = await Call.triviaStuff();
   console.log(response);
-   if (response.result) {
-     console.log("reached line 15")
-     response = JSON.parse(response);
-   } else {
-     printError(response, category, difficulty, type);
-   }
-  response.then(() => {console.log("Response Full")})
+  if (response.results) {
+    printElements(response.results[0]);
+  } else {
+    printError(response);
+  }
 }
 
-function printError (response, category, difficulty, type) {
-    console.log(`There was an ${response}`);
-}
-
-
-
-function start()
-{
-let One = new Host(triviaStuff(15, "medium", "multiple"));
-console.log(One)
-console.log(One.funky());
-/*let quiz = One.funky();
-console.log(quiz)
-  
-
-triviaStuff()
-
-getApi()
-
-document.getElementById("answer1").innerHTML = (quiz[1]);*/
+function printElements(results) {
+  let correctAnswer = results.correct_answer;
+  let incorrectAnswer = results.incorrect_answers;
+  let optionsIt = incorrectAnswer;
+  options.splice(Math.floor(Math.random() * (incorrectAnswer.length + 1)), 0, correctAnswer);
+  console.log(incorrectAnswer);
+  console.log(correctAnswer);
+  questions.innerHTML = `${results.question}`
+  choices.innerHTML = `${optionIt.map((option.index) => `
+  <li> ${index + 1}. <label class="choice-option">${optionIt}</label>`).join("")}`;
 
 }
 
-window.addEventListener("load", start);
+function printError(error) {
 
+} 
+
+triviaStuff();
+printElements();
