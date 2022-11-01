@@ -6,7 +6,7 @@ import Call from './js/call.js';
 
 //Business Logic
 let questions = document.getElementById('question')
-let choices = document.getElementsById('answer');
+let choices = document.getElementById('here');
 
 async function triviaStuff() {
   const response = await Call.triviaStuff();
@@ -22,12 +22,11 @@ function printElements(results) {
   let correctAnswer = results.correct_answer;
   let incorrectAnswer = results.incorrect_answers;
   let optionsIt = incorrectAnswer;
-  options.splice(Math.floor(Math.random() * (incorrectAnswer.length + 1)), 0, correctAnswer);
+  optionsIt.splice(Math.floor(Math.random() * (incorrectAnswer.length + 1)), 0, correctAnswer);
   console.log(incorrectAnswer);
   console.log(correctAnswer);
   questions.innerHTML = `${results.question}`
-  choices.innerHTML = `${optionIt.map((option.index) => `
-  <li> ${index + 1}. <label class="choice-option">${optionIt}</label>`).join("")}`;
+  choices.innerHTML = `${optionsIt.map((option, index) =>`<li>${index + 1}.<p>${option}</p></li>`).join('')}`;
 
 }
 

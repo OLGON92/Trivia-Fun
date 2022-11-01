@@ -1,5 +1,5 @@
 export default class Call {
-  static async triviaStuff(category, level, type) {
+  static async triviaStuff() {
     try {
       const response = await fetch(`https://opentdb.com/api.php?amount=10&category=31&difficulty=medium&type=multiple`);
       const jsonResponse = await response.json();
