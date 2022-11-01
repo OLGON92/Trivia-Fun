@@ -16,25 +16,4 @@ export default class Call {
   }
 }
 
-  /*let response = await fetch('https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple');
-  console.log(response)
-  //let data = await response.json()
-  let request = new XMLHttpRequest();
-
-  const url = `https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=multiple`;
-  request.addEventListener("loadend", function() {
-    const response = JSON.parse(this.responseText);
-    if (this.status === 200) {
-      console.log(response);
-    }
-    else 
-    {
-      console.log(`Error is ${this.status}`)
-    }
-  });
-
-  request.open("GET", url, true);
-  request.send();
-  console.log(response);*/
-
-  //return response;
+  
