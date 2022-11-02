@@ -64,7 +64,7 @@ h1 {
   text-align: center;
   font-size: 1.2rem;
   padding-top: 25px;
-  height: 170px;
+  height: 100px;
 }
 
 #question {
@@ -94,44 +94,57 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: 250px;
 }
 
-.choice-option {
-  text-align: center;
+.btn-choice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.btn-choice p {
+  height: 100px;
+  text-align: left;
   color: white;
   width: 250px;
   border-radius: 2px;
   font-weight: 500;
   background-color: rgb(184, 21, 48);
   margin: 5px;
-  padding: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   cursor: pointer;
   box-shadow: 0 .5px 2px rgb(24, 22, 22), 0 .5px 2px rgb(24, 22, 22);
 }
 
-.choice-option:hover {
+.btn-choice p:hover {
   background-color: rgb(228, 240, 175);
   color: black;
   border-color: gray;
   box-shadow: 0 .5px 5px rgb(24, 22, 22), 0 .5px 5px rgb(24, 22, 22);
 }
 
-.choice-option:active {
+.btn-choice p:active {
   transform: scale(.95);
 }
 
-#answer1,
-#answer2,
-#answer3,
-#answer4 {
+.choice-option {
+  list-style-type: none;
+  height: 150px;
+
+}
+
+#answer1 {
   display: none;
 }
 
 .bottom {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 95px;
-  margin-top: 100px;
+  column-gap: 150px;
+  margin-top: 80px;
 }
 
 .them-buttons {
