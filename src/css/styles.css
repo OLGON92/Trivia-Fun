@@ -64,7 +64,7 @@ h1 {
   text-align: center;
   font-size: 1.2rem;
   padding-top: 25px;
-  height: 170px;
+  height: 100px;
 }
 
 #question {
@@ -94,17 +94,27 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: 250px;
+}
+
+.btn-choice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .choice-option {
-  text-align: center;
+  height: 100px;
+  text-align: left;
   color: white;
   width: 250px;
   border-radius: 2px;
   font-weight: 500;
   background-color: rgb(184, 21, 48);
   margin: 5px;
-  padding: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   cursor: pointer;
   box-shadow: 0 .5px 2px rgb(24, 22, 22), 0 .5px 2px rgb(24, 22, 22);
 }
@@ -120,18 +130,15 @@ h1 {
   transform: scale(.95);
 }
 
-#answer1,
-#answer2,
-#answer3,
-#answer4 {
+#answer1 {
   display: none;
 }
 
 .bottom {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 95px;
-  margin-top: 100px;
+  column-gap: 150px;
+  margin-top: 80px;
 }
 
 .them-buttons {
@@ -139,8 +146,8 @@ display: block;
 margin-left: 20px;
 }
 
-#answer,
-#start-over {
+#startBtn,
+#next {
   border-radius: 5px;
   padding-left: 5px;
   padding-right: 5px;
@@ -151,14 +158,14 @@ margin-left: 20px;
   box-shadow: 0 1px 0 1px rgb(235, 227, 227);
 }
 
-#answer:hover,
-#start-over:hover {
+#startBtn:hover,
+#next:hover {
   background-color: rgb(136, 123, 133);
   color: whitesmoke;
 }
 
-#answer:active,
-#start-over:active {
+#startBtn:active,
+#next:active {
   transform: scale(.98);
 }
 

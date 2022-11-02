@@ -5,7 +5,7 @@ export default class Teach {
     }
     moment()
     {
-        point = false;
+       let point = false;
         if(this.user === this.right)
         {
             point = true;
