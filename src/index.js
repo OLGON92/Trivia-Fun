@@ -5,7 +5,7 @@ import './css/styles.css';
 import Call from './js/call.js';
 
 //Business Logic
-let questions = document.getElementById('question')
+let questions = document.getElementById('question');
 let choices = document.getElementById('here');
 
 async function triviaStuff() {
@@ -25,14 +25,14 @@ function printElements(results) {
   optionsIt.splice(Math.floor(Math.random() * (incorrectAnswer.length + 1)), 0, correctAnswer);
   console.log(incorrectAnswer);
   console.log(correctAnswer);
-  questions.innerHTML = `${results.question}`
-  choices.innerHTML = `${optionsIt.map((option, index) =>`<li>${index + 1}.<p>${option}</p></li>`).join('')}`;
+  questions.innerHTML = `${results.question}`;
+  choices.innerHTML = `${optionsIt.map((option, index) =>`<p>${index + 1}.<input class="placeHolder" type="radio" id="answer1" name="answer-choice" value="answer1">
+  <label class="choice-option">${option}</label></p>`).join('')}`;
 
 }
 
-function printError(error) {
-
-} 
+function printError() {
+}
 
 triviaStuff();
 printElements();
