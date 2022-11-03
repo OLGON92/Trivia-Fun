@@ -5,9 +5,9 @@ export default class Teach {
     }
     moment()
     {
-        console.log(this.user, this.right)
         let point = false;
-        if(this.user === this.right)
+        let plea = parseInt(this.user.value.charAt(6));
+        if(plea === this.right)
         {
             point = true;
         }

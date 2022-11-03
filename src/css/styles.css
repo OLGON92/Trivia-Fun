@@ -130,10 +130,6 @@ h1 {
   transform: scale(.95);
 }
 
-#answer1 {
-  display: none;
-}
-
 .bottom {
   display: flex;
   flex-wrap: wrap;

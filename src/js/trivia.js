@@ -3,11 +3,10 @@ export default class Host {
         this.data = data;
     }
 
-funky() 
+funky(num) 
 {
 	let returnarray = [0, 1, 2, 3, 4, 5];
-  console.log(this.data)
-  returnarray[0] = this.data.results[0].question;
+  returnarray[0] = this.data.results[num].question;
   let arraynums = [1, 2, 3, 4]
   
     let i = 4;
@@ -20,10 +19,10 @@ funky()
         arraynums[i] = arraynums[j];
         arraynums[j] = temp;
     }
-   returnarray[arraynums[0]] = this.data.results[0].correct_answer;
-   returnarray[arraynums[1]] = this.data.results[0].incorrect_answers[0];
-   returnarray[arraynums[2]] = this.data.results[0].incorrect_answers[1];
-   returnarray[arraynums[3]] = this.data.results[0].incorrect_answers[2];
+   returnarray[arraynums[0]] = this.data.results[num].correct_answer;
+   returnarray[arraynums[1]] = this.data.results[num].incorrect_answers[0];
+   returnarray[arraynums[2]] = this.data.results[num].incorrect_answers[1];
+   returnarray[arraynums[3]] = this.data.results[num].incorrect_answers[2];
    returnarray[5] = arraynums[0];
    
 return returnarray;

@@ -5,7 +5,6 @@ export default class Call {
       const jsonResponse = await response.json();
       if(!response.ok) {
         const errorMessage = `${response.status} ${response.statusText} ${jsonResponse.message}`;
-        console.log(errorMessage);
         throw new Error (errorMessage);
       }
       console.log(jsonResponse);

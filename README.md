@@ -43,7 +43,7 @@ _This is our first teamweek project for Epicodus. The purpose of this exercise i
 
 ## Known Bugs
 
-* _Still a work in progress._ 
+* _Still a work in progress.. As of now, a bug we have right now is that our API pushes too many questions (behind the scenes) but it work-ish_ 
 
 ## License
 
