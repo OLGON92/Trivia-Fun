@@ -9,6 +9,7 @@ window.addEventListener("load", waitforstart);
 
 let score = 0;
 
+
 function waitforstart()
 {
   //These are being grabbed from the HTML when the page loads
@@ -21,17 +22,17 @@ function start()
 {
   let category = document.getElementById("category").value; 
   let difficulty = document.getElementById("difficulty").value;
+  let num = 0;
 
-  triviaStuff(category, difficulty);
+  triviaStuff(category, difficulty, num);
 }
 
 //This handles making the main object, as well as telling call.js to make the call
-async function triviaStuff(category, difficulty) {
+async function triviaStuff(category, difficulty, num) {
   const response = await Call.callStuff(category, difficulty);
-  console.log(response);
   if (response.results) {
     let One = new Host(response);
-    show(One);
+    show(One, num);
   } else {
     printError(response, category, difficulty)
 }
@@ -43,10 +44,10 @@ function printError (response, category, difficulty) {
 
 
 
-function show(One)
+function show(One, num)
 {
 //sets the stuff for the first question
-let infoArray = One.funky();
+let infoArray = One.funky(num);
 document.getElementById("question").innerHTML = (infoArray[0]);
 document.getElementById("here1").innerHTML = (infoArray[1]);
 document.getElementById("here2").innerHTML = (infoArray[2]);
@@ -64,19 +65,19 @@ for(let i = 0; i < 4; i++)
 }
 
 console.log(options);
-selection(infoArray[5], options) 
+selection(infoArray[5], options, num) 
 }
 
 
 
-function selection(correct, options)
+function selection(correct, options, num, One)
 {
   //listens for when the user clicks on one of the options, then goes to see if they got it correct
 
-let jerry0 = () => scorer(options[0], correct, score);
-let jerry1 = () => scorer(options[1], correct, score);
-let jerry2 = () => scorer(options[2], correct, score);
-let jerry3 = () => scorer(options[3], correct, score);
+let jerry0 = () => scorer(options[0], correct, score, num, One);
+let jerry1 = () => scorer(options[1], correct, score, num, One);
+let jerry2 = () => scorer(options[2], correct, score, num, One);
+let jerry3 = () => scorer(options[3], correct, score, num, One);
 
   options[0].addEventListener("click", jerry0)
   options[1].addEventListener("click", jerry1)
@@ -88,7 +89,7 @@ let jerry3 = () => scorer(options[3], correct, score);
 
 
 
-function scorer(answer, correct, score)
+function scorer(answer, correct, score, num, One)
 {
   //if the player gets the question correct, add one to the score. 
   let result;
@@ -99,7 +100,7 @@ function scorer(answer, correct, score)
   {
     score += 1;
   }
-  console.log(score)
+  console.log(score);
+  num += 1;
+  show(One, num)
 }
-
-

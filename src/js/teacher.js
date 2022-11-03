@@ -5,12 +5,13 @@ export default class Teach {
     }
     moment()
     {
-       let point = false;
+        console.log(this.user, this.right)
+        let point = false;
         if(this.user === this.right)
         {
             point = true;
         }
     return point;
     }
-    
+
 }
