@@ -71,6 +71,7 @@ function show(One, num)
 
 function selection(correct, options, num, One)
 {
+
   //listens for when the user clicks on one of the options, then goes to see if they got it correct
 
   let jerry0 = () => scorer(options[0], correct, score, num, One);
